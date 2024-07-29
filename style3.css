@@ -1,0 +1,162 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navbar {
+  background-color: #343a40; /* Dark background color */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.nav-item {
+  margin-left: 20px; /* Adjust spacing between items */
+}
+
+.nav-link {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Additional styling for content sections */
+.heading {
+  font-family: Verdana, sans-serif;
+  color: #ffd700;
+  text-align: center;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    margin: 30px;
+    padding: 20px;
+  }
+}
+
+/* Desktop browsers (769px and above) */
+@media (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .container {
+    margin: 50px auto;
+    padding: 20px;
+  }
+}
+

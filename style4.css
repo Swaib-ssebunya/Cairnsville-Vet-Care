@@ -1,0 +1,163 @@
+body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-image: url('images/IMG-20240607-WA0014.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000; 
+    margin: 0;
+    padding: 0;
+}  
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a slight background to make the text readable */
+}
+
+.heading {
+    font-family: Verdana, sans-serif;
+    color: #ffd700;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-gallery img {
+    width: 140%; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 20px;
+  margin: 10px; /* Adds spacing around each image */
+  max-width: 100%; /* Ensures images don't overflow the container */
+  height: auto; /* Maintains the aspect ratio of images */
+  display: block; /* Ensures images are block elements, taking full width of their container */
+}
+
+
+.event-details {
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a slight background to make the text readable */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.event-details h3 {
+    font-family: Verdana, sans-serif;
+    color: #ff4500;
+}
+
+.event-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #343a40; 
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop browsers (769px and above) */
+@media (min-width: 769px) {
+    .image-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .navbar {
+        flex-direction: row;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+        width: auto;
+    }
+    
+    .nav-item {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
